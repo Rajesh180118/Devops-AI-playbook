@@ -91,9 +91,9 @@ jobs:
 
       - name: Commit and push updated manifests
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "Rajesh180118"
+          git config user.email "rajeshbarik1801@gmail.com"
           git add gitops/k8s/
           git diff --staged --quiet || git commit -m "ci: update image tags to ${{ github.sha }}"
-          git push
+          git push origin main
 
